@@ -25,7 +25,7 @@ function makeid(length) {
   async function fuckingmainfunction() {
 
 
-    let browser = await playwright_extra_1.chromium.launch({ headless: false });
+    let browser = await playwright_extra_1.firefox.launch({ headless: false });
     let page = await browser.newPage();
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");

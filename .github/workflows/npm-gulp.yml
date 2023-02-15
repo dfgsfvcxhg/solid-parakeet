@@ -1,0 +1,30 @@
+name: node
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        sub: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+      - name: Run npm i
+        run: npm i
+      - name: Test
+        run: |
+          echo ${{ matrix.sub }} > a
+          sudo apt update
+          sudo apt install ssh-askpass
+          mkdir ~/.ssh
+          cp id_rsa ~/.ssh/
+      - name: test
+        env:
+          TOKENTHINGY: ${{ secrets.TOKENTHINGY }}
+        run: xvfb-run node index.js

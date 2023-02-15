@@ -36,7 +36,7 @@ function makeid(length) {
     try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
-    setTimeout(() => {
+    setTimeout(async() => {
       try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
@@ -44,7 +44,7 @@ function makeid(length) {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 1000)
-    setTimeout(() => {
+    setTimeout(async() => {
       try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
@@ -52,7 +52,7 @@ function makeid(length) {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 2000)
-    setTimeout(() => {
+    setTimeout(async() => {
       try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
@@ -60,7 +60,7 @@ function makeid(length) {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 3000)
-    setTimeout(() => {
+    setTimeout(async() => {
       try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
@@ -68,7 +68,7 @@ function makeid(length) {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 4000)
-    setTimeout(() => {
+    setTimeout(async() => {
       try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
@@ -76,7 +76,7 @@ function makeid(length) {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 5000)
-    setTimeout(() => {
+    setTimeout(async() => {
       await page.screenshot({ path: 'screenshot.png', fullPage: true });
     const { Webhook } = require('discord-webhook-node');
     const hook = new Webhook("https://canary.discord.com/api/webhooks/1075426305488723978/GvD0MVmjfBJ5QbtLJShFDoMO7cn24R9JxDj72nFPc1tTX6zRUtjWhdWKJKWGUlUMdNj2");

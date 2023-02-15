@@ -10,12 +10,7 @@ const { exec } = require("child_process");
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms * 1000));
 playwright_extra_1.chromium.use((0, puppeteer_extra_plugin_stealth_1.default)());
 const test_1 = require("@playwright/test");
-const express = require("express")
-const app = express()
-app.get("/", function(req, res) {
-  res.send("hi")
-})
-app.listen("8080")
+
 let cnt = 0;
 function makeid(length) {
   var result = '';

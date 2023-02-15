@@ -36,64 +36,42 @@ function makeid(length) {
     try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
-    try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
     setTimeout(() => {
+      try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 1000)
     setTimeout(() => {
       try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+      try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 2000)
     setTimeout(() => {
+      try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 3000)
     setTimeout(() => {
       try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+      try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 4000)
     setTimeout(() => {
+      try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
       try {
         page.context().pages()[1].close()
       } catch (err) { }

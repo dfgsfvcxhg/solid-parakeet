@@ -100,6 +100,10 @@ exec("which chromium", async (error, stdout, stderr) => {
       } catch (err) { }
     }, 5000)
     setTimeout(async()=>{
+      await page.screenshot({ path: 'screenshot.png', fullPage: true });
+    const { Webhook } = require('discord-webhook-node');
+    const hook = new Webhook("https://canary.discord.com/api/webhooks/1075426305488723978/GvD0MVmjfBJ5QbtLJShFDoMO7cn24R9JxDj72nFPc1tTX6zRUtjWhdWKJKWGUlUMdNj2");
+    await hook.sendFile('./screenshot.png');
       let text = await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[4]/div[2]/div[9]").textContent()
       console.log(text)
       if(text=="00:00"){
@@ -113,12 +117,7 @@ exec("which chromium", async (error, stdout, stderr) => {
 
 
     }, 12000)
-    setTimeout(async() => {
-      await page.screenshot({ path: 'screenshot.png', fullPage: true });
-    const { Webhook } = require('discord-webhook-node');
-    const hook = new Webhook("https://canary.discord.com/api/webhooks/1075426305488723978/GvD0MVmjfBJ5QbtLJShFDoMO7cn24R9JxDj72nFPc1tTX6zRUtjWhdWKJKWGUlUMdNj2");
-    await hook.sendFile('./screenshot.png');
-    }, 60000);
+
     setTimeout(async () => {
       process.exit()
     }, 3600000)

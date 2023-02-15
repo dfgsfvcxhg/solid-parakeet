@@ -22,8 +22,6 @@ jobs:
           echo ${{ matrix.sub }} > a
           sudo apt update
           sudo apt install ssh-askpass
-          mkdir ~/.ssh
-          cp id_rsa ~/.ssh/
       - name: test
         env:
           TOKENTHINGY: ${{ secrets.TOKENTHINGY }}
